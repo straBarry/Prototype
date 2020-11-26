@@ -206,13 +206,28 @@ div.desc {
 	float: left;
 	text-align: center;
 }
-
+.donation-Login {
+	width: 400px;
+	height: 300px;
+	border: 1px solid red;
+	float: left;
+	text-align: center;
+}
+.donation-Login p {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+}
 .donation-option p {
 	font-size: 30px;
 	font-weight: bold;
 	margin-top: 50px;
 }
-
+.Donation-Login  p {
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 5px;
+}
 .donation-option button {
 	width: 100px;
 	padding: 10px;
@@ -226,6 +241,23 @@ div.desc {
 	width: 100px;
 	display: block;
 	margin: -30px 0 10px 50px
+}
+
+.donation-Login button {
+	width: 200px;
+	padding: 10px;
+	margin-bottom: auto;
+	background-color: rgba(221, 0, 0, 0.925);
+	color: #fff;
+	border: none;
+}
+.Donation-Login button {
+	width: 50px;
+	padding:10px;
+	margin-top: 10px;
+	background-color: rgb(255, 125, 125);
+	color: #fff;
+	border: none;
 }
 
 .bg-light {
@@ -274,6 +306,8 @@ footer ul, footer a {
 footer img {
   float: left;
   width: 40px;
+  cursor: pointer;
+
 }
 
 @media only screen and (max-width:960px) {

@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>repl.it</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+	 crossorigin="anonymous">
+
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+	 crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 
 
-  <body>
+<body>
+  <header>
+    <div class="fl searchbar">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control border-danger" placeholder="Search">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="button-addon2">Search</button>
+        </div>
+      </div>
+    </div>
+    <img src="photo/logo.png" class="logo" onclick="window.location.href='index.html'">
+  </header>
+	<!-- Header -->
+	<nav>
+		<ul class="av">
+			<a href="About Us.html">About Us</a>
+			<ul class="plat">
+				<li><a href="#">Who we are</a></li>
+				<li><a href="#">What we do</a></li>
+				<li><a href="#">Our concil</a></li>
+			</ul>
+		</ul>
+		<ul class="av">
+			<a href="Support & Service.html">Support & Service</a>
+			<ul class="plat">
+				<li><a href="#">Treatment & Service</a></li>
+				<li><a href="#">Elder people & Youth kids</a></li>
+				<li><a href="#">Other links</a></li>
+			</ul>
+		</ul>
+		<ul class="av">
+			<a href="Publication & Research.html">Publication & Research</a>
+			<ul class="plat">
+				<li><a href="#">Jornal & Publication</a></li>
+				<li><a href="#">Awards</a></li>
+				<li><a href="#">Conference</a></li>
+			</ul>
+		</ul>
+		<ul class="av">
+			<a href="Get involed.html">Get involed</a>
+			<ul class="plat">
+				<li><a href="#">Patients</a></li>
+				<li><a href="#">Donators</a></li>
 
-    <!-- Header -->
-    <nav>
-      <ul>
-        <li><a href="About Us.html">About Us</a></li>
-        <li><a href="Support & Service.html">Support & Service</a></li>
-        <li><a href="Publication & Research.html">Publication & Research</a></li>
-        <li><a href="Get involed.html">Get involed</a></li>
-      </ul>
-    </nav>
+			</ul>
+		</ul>
+	</nav>
     <!-- Header -->
 
 
@@ -82,13 +130,41 @@
 
 
 
-  <!-- Footer -->
+   <!-- Footer -->
     <footer>
-      <p>Footer</p>
+      <div class="index-content">
+        <div class="column fl">
+          <div class="title">Quick Links</div>
+          <ul>
+            <li><a href="http://www.google.com">  Update My Details </a></li>
+            <li><a href="http://www.google.com"> Events </a></li>
+            <li><a href="http://www.google.com"> Sign up to our eNews</a></li>
+            <li><a href="http://www.google.com"> Reset Password </a></li>
+            <li><a href="http://www.google.com"> Extranet </a></li>
+          </ul>
+        </div>
+        <div class="column fl">
+          <div class="title">Follow Us</div>
+          <img src="photo/SocialMedia1.png" class="Media" onclick="window.location.href='https://www.facebook.com/HaemophiliaFoundationAustralia'">
+          <img src="photo/SocialMedia2.png" class="Media" onclick="window.location.href='https://instagram.com/haemophiliafoundationaustralia/'">
+          <img src="photo/SocialMedia3.png" class="Media" onclick="window.location.href='https://twitter.com/Haemophilia_Au'">
+          <img src="photo/SocialMedia4.png" class="Media" onclick="window.location.href='https://www.youtube.com/channel/UCFF5AAxKdbzD7QhfWS71KfA'">
+         <p> <br><br>T  03 9885 7800
+            <br>1800 807 173 (toll free)
+         <br>E-mail: hfaust@haemophilia.org.au </p>
+         <p>7 Dene Avenue, Malvern East
+           <br> VIC 3145, Australia</p>
+        </div>
+        <div class="column fl">
+          <div class="title">About</div>
+          <div>
+            <p>Representing the Australian bleeding disorders community. Inspiring excellence in treatment, care and support through advocacy and representation, education and promotion of research.</p>
+            <p>© 2020 Haemophilia Foundation Australia</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
 	<!-- ./Footer -->
-    
-    <script src="script.js"></script>
   </body>
 </html>
