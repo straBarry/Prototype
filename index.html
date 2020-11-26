@@ -1,42 +1,189 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  </head>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>repl.it</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+	 crossorigin="anonymous">
+
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+	 crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 
 
-  <body>
-
-    <!-- Header -->
-    <nav>
-      <ul>
-        <li><a href="About Us.html">About Us</a></li>
-        <li><a href="Support & Service.html">Support & Service</a></li>
-        <li><a href="Publication & Research.html">Publication & Research</a></li>
-        <li><a href="Get involed.html">Get involed</a></li>
-      </ul>
-    </nav>
-    <!-- Header -->
- 
-
-
-    <div class="w3-content w3-display-container" style="width:100%">
-      <img class="mySlides" src="photo/icu+nurse.png" style="width:100%">
-      <img class="mySlides" src="photo/Outstanding.jpg" style="width:100%">
-      <img class="mySlides" src="photo/Presidents-2018.jpg" style="width:100%">
-     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-       <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-       <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-     </div>
+<body>
+  <header>
+    <div class="fl searchbar">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control border-danger" placeholder="Search">
+        <div class="input-group-append">
+          <button class="btn btn-outline-danger" type="button" id="button-addon2">Search</button>
+        </div>
+      </div>
     </div>
+    <img src="photo/logo.png" class="logo" onclick="window.location.href='index.html'">
+  </header>
+	<!-- Header -->
+	<nav>
+		<ul class="av">
+			<a href="About Us.html">About Us</a>
+			<ul class="plat">
+				<li><a href="#">Who we are</a></li>
+				<li><a href="#">What we do</a></li>
+				<li><a href="#">Our concil</a></li>
+			</ul>
+		</ul>
+		<ul class="av">
+			<a href="Support & Service.html">Support & Service</a>
+			<ul class="plat">
+				<li><a href="#">Treatment & Service</a></li>
+				<li><a href="#">Elder people & Youth kids</a></li>
+				<li><a href="#">Other links</a></li>
+			</ul>
+		</ul>
+		<ul class="av">
+			<a href="Publication & Research.html">Publication & Research</a>
+			<ul class="plat">
+				<li><a href="#">Jornal & Publication</a></li>
+				<li><a href="#">Awards</a></li>
+				<li><a href="#">Conference</a></li>
+			</ul>
+		</ul>
+		<ul class="av">
+			<a href="Get involed.html">Get involed</a>
+			<ul class="plat">
+				<li><a href="#">Patients</a></li>
+				<li><a href="#">Donators</a></li>
 
+			</ul>
+		</ul>
+	</nav>
+
+	<!-- Header -->
+
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="photo/Slidesshow1.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="photo/Slidesshow2.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="photo/Slidesshow3.jpg" class="d-block w-100">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+  <h2 style="text-align:center">Our Communicity</h2>
+  <div class="index-content">
+        <div class="responsive">
+          <div class="img">
+            <a target="_blank" href="img_fjords.jpg">
+              <img src="photo/Communicity1.JPG" alt="Health & Wellbeing">
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="img">
+            <a target="_blank" href="img_forest.jpg">
+             <img src="photo/Communicity2.JPG" alt="Service for Getting older" >
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="img">
+            <a target="_blank" href="img_lights.jpg">
+               <img src="photo/Communicity3.JPG" alt="Works & Finances">
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="img">
+            <a target="_blank" href="img_mountains.jpg">
+               <img src="photo/Communicity4.JPG" alt="Support" >
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="img">
+            <a target="_blank" href="img_fjords.jpg">
+              <img src="photo/Communicity5.JPG" alt="Recreation & Travel" >
+            </a>
+           
+          </div>
+        </div>
+
+
+        <div class="responsive">
+          <div class="img">
+            <a target="_blank" href="img_forest.jpg">
+             <img src="photo/Communicity6.JPG" alt="Planning for the future" >
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="img">
+            <a target="_blank" href="img_lights.jpg">
+               <img src="photo/Communicity7.JPG" alt="Connect to Other" width="300" height="200">
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="img">
+            <a target="_blank" href="img_mountains.jpg">
+               <img src="photo/Communicity8.JPG" alt="For Health Professinal" width="300" height="200">
+            </a>
+          </div>
+        </div>
+  </div>
+        
+  <h2 style="text-align:center">DON</h2>
+  <div class="index-content"> 
+      <div class="index-options">
+          <div class="donation-option bg-dark">
+            <p> $20 </p>
+            <button>Select</button>
+          </div>
+          <div class="donation-option bg-light">
+            <p> $50 </p>
+            <button>Select</button>
+          </div>
+      </div>
+  </div>
 
 
 
@@ -44,11 +191,36 @@
 
   <!-- Footer -->
     <footer>
-      <p>Footer</p>
+      <div class="index-content">
+        <div class="column fl">
+          <div class="title">Links</div>
+          <ul>
+            <li><a href="http://www.google.com"> Link1 </a></li>
+            <li><a href="http://www.google.com"> Link1 </a></li>
+            <li><a href="http://www.google.com"> Link1 </a></li>
+            <li><a href="http://www.google.com"> Link1 </a></li>
+            <li><a href="http://www.google.com"> Link1 </a></li>
+          </ul>
+        </div>
+        <div class="column fl">
+          <div class="title">Follow Us</div>
+          <img src="photo/SocialMedia1.png">
+          <img src="photo/SocialMedia2.png">
+          <img src="photo/SocialMedia3.png">
+          <img src="photo/SocialMedia4.png">
+        </div>
+        <div class="column fl">
+          <div class="title">About</div>
+          <div>
+            <p>The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.</p>
+            <p>abc def</p>
+            <p>abc def</p>
+            <p>abc def</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
 	<!-- ./Footer -->
-    
-    <script src="script.js"></script>
   </body>
-</html> 
+</html>
